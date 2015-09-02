@@ -18,12 +18,16 @@
         display:inline;
       }
       div.tabcontent {
-        border:solid 1px black;
+        border:solid 2px black;
         padding:25px;
+        position: relative;
+        bottom:14px;
+        z-index:-1;
       }
       ul.tabs {
         list-style:none;
-        padding:0px;
+        padding:10px 0px 3px 0px;
+        background-color:#C8C8C8;
       }
       ul.tabs>li {
         margin-left:auto;
@@ -33,8 +37,6 @@
         border-right:2px solid #484848;
         border-top:2px solid #484848;
         padding:5px;
-        position: relative;
-        bottom:-12px;
         -moz-border-radius: 0px;
         -webkit-border-radius: 3px 3px 0px 0px;
         border-radius: 10px 10px 0px 0px; 
@@ -43,15 +45,15 @@
   </head>
   <body>
     <ul class="tabs" id="tabs1">
-      <li id="1"><a href="#" onclick="tab('1', '1')">page 1</a></li>
-      <li id="2"><a href="#" onclick="tab('1', '2')">page 2</a></li>
-      <li id="3"><a href="#" onclick="tab('1', '3')">page 3</a></li>
+      <li id="page1"><a href="#" onclick="tab('1', '1')">page 1</a></li>
+      <li id="page2"><a href="#" onclick="tab('1', '2')">page 2</a></li>
+      <li id="page3"><a href="#" onclick="tab('1', '3')">page 3</a></li>
     </ul>
     <div class="tabcontent" id="tabs1">
       <div class="page" id="page1">
         <ul class="tabs" id="tabs2">
-          <li><a href="#" onclick="tab('2', '1')">page 1</a></li>
-          <li><a href="#" onclick="tab('2', '2')">page 2</a></li>
+          <li id="page1"><a href="#" onclick="tab('2', '1')">page 1</a></li>
+          <li id="page2"><a href="#" onclick="tab('2', '2')">page 2</a></li>
         </ul>
         <div class="tabcontent" id="tabs2">
           <div class="page" id="page1">Content 1</div>
