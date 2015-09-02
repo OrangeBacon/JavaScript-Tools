@@ -2,21 +2,8 @@
 <html>
   <head>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>
-      $(document).ready(function() {
-        $("#test").load("Header.html");
-        var content = $("#test").innerHTML;
-        var http = content.substring(0,4);
-        if (http == "http") {
-          $("#header").load(content);
-        } else {
-          document.getElementById("header").innerHTML = content;
-        };
-      });
-    </script>
   </head>
   <body>
-    <div id="test" style="display:none"></div>
-    <div id="header"></div>
+    
   </body>
 </html>
