@@ -5,7 +5,7 @@
     <script>
       $(document).ready(function() {
         $("#test").load("Header.html");
-        var content = $("#test").val();
+        var content = $("#test").innerHTML;
         var http = content.substring(0,4);
         if (http == "http") {
           $("#header").load(content);
