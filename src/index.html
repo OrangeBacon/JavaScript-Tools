@@ -6,6 +6,8 @@
       function tab(tabId, pageId) {
         $("div#tabs" + tabId + "> div.page").css('display', 'none');
         $("div#tabs" + tabId + "> div#page" + pageId).css('display', 'inline');
+        $("ul#tabs" + tabId + "> li").css('background-color', 'white');
+        $("ul#tabs" + tabId + "> li#page" + pageId).css('background-color', 'black');
       };
     </script>
     <style>
@@ -24,6 +26,8 @@
         padding:0px;
       }
       ul.tabs>li {
+        margin-left:auto;
+        margin-right:auto;
         display:inline;
         border-left:2px solid #484848;
         border-right:2px solid #484848;
@@ -33,19 +37,19 @@
         bottom:-12px;
         -moz-border-radius: 0px;
         -webkit-border-radius: 3px 3px 0px 0px;
-        border-radius: 3px 3px 0px 0px; 
+        border-radius: 10px 10px 0px 0px; 
       }
     </style>
   </head>
   <body>
-    <ul class="tabs">
-      <li><a href="#" onclick="tab('1', '1')">page 1</a></li>
-      <li><a href="#" onclick="tab('1', '2')">page 2</a></li>
-      <li><a href="#" onclick="tab('1', '3')">page 3</a></li>
+    <ul class="tabs" id="tabs1">
+      <li id="1"><a href="#" onclick="tab('1', '1')">page 1</a></li>
+      <li id="2"><a href="#" onclick="tab('1', '2')">page 2</a></li>
+      <li id="3"><a href="#" onclick="tab('1', '3')">page 3</a></li>
     </ul>
     <div class="tabcontent" id="tabs1">
       <div class="page" id="page1">
-        <ul class="tabs">
+        <ul class="tabs" id="tabs2">
           <li><a href="#" onclick="tab('2', '1')">page 1</a></li>
           <li><a href="#" onclick="tab('2', '2')">page 2</a></li>
         </ul>
