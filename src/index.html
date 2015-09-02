@@ -2,8 +2,21 @@
 <html>
   <head>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+      function tab(tabId, pageId) {
+        $("div#" + tabId + "> div.page").css('display', 'none');
+        $("div#" + tabId + "> div#" + pageId).css('display', 'inline');
+      }
+    </script>
   </head>
   <body>
-    
+    <ul class="tabs">
+      <li><a onclick="tab('tab1', 'page1')">page 1</a></li>
+      <li><a onclick="tab('tab1', 'page2')">page 2</a></li>
+    </ul>
+    <div class="tabcontent" id="tab1">
+      <div class="page" id="page1">content 1</div>
+      <div class="page" id="page2">content 2</div>
+    </div>
   </body>
 </html>
