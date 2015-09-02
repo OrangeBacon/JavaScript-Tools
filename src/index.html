@@ -4,17 +4,42 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
       function tab(tabId, pageId) {
-        $("div#" + tabId + "> div.page").css('display', 'none');
-        $("div#" + tabId + "> div#" + pageId).css('display', 'inline');
-      }
+        $("div#tabs" + tabId + "> div.page").css('display', 'none');
+        $("div#tabs" + tabId + "> div#page" + pageId).css('display', 'inline');
+      };
     </script>
+    <style>
+      div.page{
+        display:none;
+        border-style: solid;
+        border-width: 1px;
+      }
+      div#page1{
+        display:inline;
+      }
+      ul.tabs {
+        list-style-type: none;
+        overflow:hidden
+        text-align:center;
+        padding:25px 50px;
+      }
+      ul.tabs>li {
+        display:inline;
+        text-align:center;
+      }
+      div.tabcontent div.page {
+        margin-left:auto;
+        margin-right:auto;
+        width:95%;
+      }
+    </style>
   </head>
   <body>
     <ul class="tabs">
-      <li><a onclick="tab('tab1', 'page1')">page 1</a></li>
-      <li><a onclick="tab('tab1', 'page2')">page 2</a></li>
+      <li><a href="#" onclick="tab('1', '1')">page 1</a></li>
+      <li><a href="#" onclick="tab('1', '2')">page 2</a></li>
     </ul>
-    <div class="tabcontent" id="tab1">
+    <div class="tabcontent" id="tabs1">
       <div class="page" id="page1">content 1</div>
       <div class="page" id="page2">content 2</div>
     </div>
