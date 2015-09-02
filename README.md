@@ -10,6 +10,10 @@ A JavaScript and Jquery tab system for writing interactive HTML pages.
 ## Usage
 The tab system is really easy to use and put on your website.  
 
+Please view the fllowing for any help:
+http://scratchos.github.io/JavaScript-Tabs/src/index2.html
+http://scratchos.github.io/JavaScript-Tabs/src/index2.html
+
 1. Put the following lines in the head of the document.
   1. `<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>`
   2. `<script type="text/javascript" src="tabs.js"></script>`
@@ -29,8 +33,7 @@ The tab system is really easy to use and put on your website.
 
 ## Developers
 
-The gh-pages branch is for testing so you can view whether your tests work before submiting a pull request so the changes can be included in the final version of script.  The testing page is at http://scratchos.github.io/JavaScript-Tabs/src/  
-Priorities to be fixed are any open issues.
+The gh-pages branch is for testing so you can view whether your tests work before submiting a pull request so the changes can be included in the final version of script. Priorities to be fixed are any open issues.  The page http://scratchos.github.io/JavaScript-Tabs/src/index.html is a test of nesting, http://scratchos.github.io/JavaScript-Tabs/src/index2.html is a test of non nesting.  These pages need to work for the code to be accepted.
 
 ## Licence
 
