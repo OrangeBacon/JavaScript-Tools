@@ -11,26 +11,20 @@
     <style>
       div.page{
         display:none;
-        border-style: solid;
-        border-width: 1px;
       }
       div#page1{
         display:inline;
       }
+      div.tabcontent {
+        border:solid 1px black;
+        padding:25px;
+      }
       ul.tabs {
-        list-style-type: none;
-        overflow:hidden
-        text-align:center;
-        padding:25px 50px;
+        list-style:none;
+        padding:0px;
       }
       ul.tabs>li {
         display:inline;
-        text-align:center;
-      }
-      div.tabcontent div.page {
-        margin-left:auto;
-        margin-right:auto;
-        width:95%;
       }
     </style>
   </head>
@@ -38,10 +32,21 @@
     <ul class="tabs">
       <li><a href="#" onclick="tab('1', '1')">page 1</a></li>
       <li><a href="#" onclick="tab('1', '2')">page 2</a></li>
+      <li><a href="#" onclick="tab('1', '3')">page 3</a></li>
     </ul>
     <div class="tabcontent" id="tabs1">
-      <div class="page" id="page1">content 1</div>
-      <div class="page" id="page2">content 2</div>
+      <div class="page" id="page1">
+        <ul class="tabs">
+          <li><a href="#" onclick="tab('2', '1')">page 1</a></li>
+          <li><a href="#" onclick="tab('2', '2')">page 2</a></li>
+        </ul>
+        <div class="tabcontent" id="tabs2">
+          <div class="page" id="page1">Content 1</div>
+         <div class="page" id="page2">content 2</div>
+       </div>
+      </div>
+      <div class="page" id="page2">content 3</div>
+      <div class="page" id="page3">content 4</div>
     </div>
   </body>
 </html>
