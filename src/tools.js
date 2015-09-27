@@ -10,11 +10,13 @@ function spoil(id) {
   event.preventDefault();
   $("#spoiler" + id).slideToggle("slow");
 };
-
-$(".show").click(function(){
-  if ($.trim($(this).text()) === 'Show') {
-    $(this).text('Hide');
-  } else {
-    $(this).text('Show');        
-  }
+$(document).ready(function(){
+  $(".show").click(function(){
+   if ($.trim($(this).text()) === 'Show') {
+      $(this).text('Hide');
+   } else {
+     $(this).text('Show');        
+    }
+  });
 });
+
