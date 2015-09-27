@@ -8,7 +8,7 @@ function tab(tabId, pageId) {
 
 function spoil(id) {
   event.preventDefault();
-  $("#spoiler" + id).animate(height: "toggle", "slow");;
+  $("#spoiler" + id).animate(height: "toggle", "slow");
 };
 
 $(".show").click(function(){
