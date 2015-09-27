@@ -21,8 +21,8 @@ $(document).ready(function(){
   });
 });
 
-function Dialouge(title, parts, modal) {
-  
+function Dialouge(id, title, parts, modal) {
+  $(".Dialouge-" + id).append()
 }
 
 
