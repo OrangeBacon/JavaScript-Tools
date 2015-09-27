@@ -8,6 +8,10 @@ function tab(tabId, pageId) {
 
 function spoil(id) {
   event.preventDefault();
-  $("#spoiler" + id).slideToggle( "slow" );
-  $(this).text('PUSH ME' ? 'DON"T PUSH ME' : 'PUSH ME');
+  $("#spoiler" + id).animate({height: "toggle",opacity: "toggle"}, "slow");;
+  if ($.trim($(this).text()) === 'Show') {
+    $(this).text('Hide');
+  } else {
+    $(this).text('Show');        
+  }
 };
