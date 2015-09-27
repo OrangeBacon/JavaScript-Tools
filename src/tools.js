@@ -8,10 +8,13 @@ function tab(tabId, pageId) {
 
 function spoil(id) {
   event.preventDefault();
-  $("#spoiler" + id).animate({height: "toggle",opacity: "toggle"}, "slow");;
+  $("#spoiler" + id).animate(height: "toggle", "slow");;
+};
+
+$(".show").click(function(){
   if ($.trim($(this).text()) === 'Show') {
     $(this).text('Hide');
   } else {
     $(this).text('Show');        
   }
-};
+});
