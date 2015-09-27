@@ -22,7 +22,7 @@ $(document).ready(function(){
 });
 
 function open(id) {
-  $(".dialouge" + id).css("display:block");
+  $(".dialouge-" + id).css("display:block");
 };
 
 function Dialouge(id, title, parts, modal) {
