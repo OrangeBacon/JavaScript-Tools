@@ -40,12 +40,21 @@
     <br>
     <!--dialouge-->
     <button class="open" onlick="open('d')"
-    <div class="dialouge-d"></div>
+    <div id="dialouge-d" class="dialouge">
+      <div class="cover"></div>
+      <div class="dialouge">
+        <p class="title">myTitle</p>
+        <button class="exit">X</button>
+        <img class="image" src="http://goo.gl/xz8ku6">
+        <p class="text"style="background-color:red,text-align:center">hello</p>
+        <button class="button" onclick="d.exit">exit</button>
+      </div>
+    </div>
     <script type="text/javascript">
-      a = new img("http://goo.gl/xz8ku6");
-      b = new txt("hello", "background-color:red,text-align:center");
-      c = new button("exit", "a.exit");
-      d = new Dialouge("d", "myTitle", {a,b,c}, true)
+      var a = new img("dialouge", "http://goo.gl/xz8ku6");
+      var b = new txt("dialouge", "hello", "background-color:red,text-align:center");
+      var c = new button("dialouge", "exit", "d.exit");
+      var d = new Dialouge("d", "myTitle", {a,b,c}, true)
     </script>
     <!--end dialouge-->
   </body>
