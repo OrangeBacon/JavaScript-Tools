@@ -1,4 +1,5 @@
 function tab(tabId, pageId) {
+  event.preventDefault()
   $("div#tabs" + tabId + "> div.page").css('display', 'none');
   $("div#tabs" + tabId + "> div#page" + pageId).css('display', 'inline');
   $("ul#tabs" + tabId + "> li").css('background-color', '#A0A0A0');
