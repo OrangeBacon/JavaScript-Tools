@@ -21,6 +21,10 @@ $(document).ready(function(){
   });
 });
 
+function open(id) {
+  $(".dialouge" + id).css("display:block");
+};
+
 function Dialouge(id, title, parts, modal) {
   $(".Dialouge-" + id).append()
 }
