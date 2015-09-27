@@ -61,9 +61,6 @@ ul.tabs>li>a {
   -webkit-border-radius: 10px 10px 0px 0px;
   border-radius: 10px 10px 0px 0px;
 }
-ul.tabs>li>a:active{
-  text-decoration:underline;
-}
 
 ul.tabs>li:hover {
   background-color:#D0D0D0;
