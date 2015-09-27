@@ -10,6 +10,7 @@ function spoil(id) {
   event.preventDefault();
   $("#spoiler" + id).slideToggle("slow");
 };
+
 $(document).ready(function(){
   $(".show").click(function(){
    if ($.trim($(this).text()) === 'Show') {
@@ -19,4 +20,10 @@ $(document).ready(function(){
     }
   });
 });
+
+function Dialouge(title, parts, modal) {
+  
+}
+
+
 
