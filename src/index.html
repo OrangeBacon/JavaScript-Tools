@@ -39,15 +39,13 @@
     <br>
     <br>
     <!--dialouge-->
-    <button class="open" onlick="open('a')"
-    <div class="dialouge-a"></div>
+    <button class="open" onlick="open('d')"
+    <div class="dialouge-d"></div>
     <script type="text/javascript">
-       a = new Dialouge(
-         "myTitle",
-         {new img("http://goo.gl/xz8ku6"),
-         new txt("hello" "background-color:red,text-align:center"),
-         new button("exit", "a.exit")}
-         true)
+      a = new img("http://goo.gl/xz8ku6");
+      b = new txt("hello" "background-color:red,text-align:center");
+      c = new button("exit", "a.exit");
+      d = new Dialouge("myTitle", {a,b,c}, true)
     </script>
     <!--end dialouge-->
   </body>
