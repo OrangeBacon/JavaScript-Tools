@@ -84,6 +84,7 @@ div.content {
   border-radius: 10px 10px 10px 10px; 
   background-color:white;
   display:none;
+  margin-top:5px;
 }
 
 button.show {
