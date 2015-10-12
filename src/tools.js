@@ -1,6 +1,6 @@
 function tab(tabId, pageId) {
   event.preventDefault();
-  var i1 = [document.querySelectorAll("div#tabs" + tabId + "> div.page")];
+  var i1 = document.querySelectorAll("div#tabs" + tabId + "> div.page");
   for (var i = 0; i < i1.length; i++) {
     i1[i].style.display = 'none';
   };
