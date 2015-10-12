@@ -5,7 +5,7 @@ function tab(tabId, pageId) {
   document.querySelectorAll("ul#tabs" + tabId + "> li").style.backgroundColor = '#A0A0A0';
   document.querySelectorAll("ul#tabs" + tabId + "> li#page" + pageId).style.backgroundColor = 'white';
 };
-
+/*
 function spoil(id) {
   event.preventDefault();
   $("#spoiler" + id).slideToggle("slow");
@@ -28,6 +28,6 @@ function open(id) {
 function Dialouge(id, title, parts, modal) {
   $(".Dialouge-" + id).append()
 }
-
+*/
 
 
