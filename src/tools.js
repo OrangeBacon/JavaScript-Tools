@@ -21,7 +21,7 @@ function tab(tabId, pageId) {
 function spoil(id) {
   event.preventDefault();
   if (document.querySelector('#spoiler1').style.display === 'none') {
-    document.querySelector('#spoiler1').style.display = 'inline';
+    document.querySelector('#spoiler1').style.display = 'block';
   } else {
     document.querySelector('#spoiler1').style.display = 'none';
   }
