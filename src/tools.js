@@ -17,29 +17,22 @@ function tab(tabId, pageId) {
     i1[i].style.backgroundColor = 'white';
   };
 };
-/*
+
 function spoil(id) {
   event.preventDefault();
-  $("#spoiler" + id).slideToggle("slow");
+  if (document.querySelector('#spoiler1').style.display === 'none') {
+    document.querySelector('#spoiler1').style.display = 'inline';
+  } else {
+    document.querySelector('#spoiler1').style.display = 'none';
+  }
 };
 
-$(document).ready(function(){
-  $(".show").click(function(){
-   if ($.trim($(this).text()) === 'Show') {
-      $(this).text('Hide');
-   } else {
-     $(this).text('Show');        
+document.onload = function(){
+  document.querySelectorAll('.show').addEventListener("click", function(){
+    if (this.innerHTML() === 'Show') {
+      this.innerHTML('Hide');
+    } else {
+      this.innerHTML('Show');
     }
   });
-});
-
-function open(id) {
-  $("#dialouge-" + id).css("display","block");
 };
-
-function Dialouge(id, title, parts, modal) {
-  $(".Dialouge-" + id).append()
-}
-*/
-
-
