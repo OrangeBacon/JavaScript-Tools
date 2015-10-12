@@ -1,7 +1,7 @@
 function tab(tabId, pageId) {
   event.preventDefault();
   document.querySelectorAll("div#tabs" + tabId + "> div.page").style.display = 'none';
-  document.querySelectorAll("div#tabs" + tabId + "> div#page" + pageId).style.display = 'inline');
+  document.querySelectorAll("div#tabs" + tabId + "> div#page" + pageId).style.display = 'inline';
   document.querySelectorAll("ul#tabs" + tabId + "> li").style.backgroundColor = '#A0A0A0';
   document.querySelectorAll("ul#tabs" + tabId + "> li#page" + pageId).style.backgroundColor = 'white';
 };
