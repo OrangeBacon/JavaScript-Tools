@@ -30,7 +30,7 @@ function spoil(id) {
 document.onload = function(){
   var i1 = document.querySelectorAll('.show');
   for (var i = 0; i < i1.length; i++) {
-    i1[i]addEventListener("click", function(){
+    i1[i].addEventListener("click", function(){
     if (this.innerHTML() === 'Show') {
       this.innerHTML('Hide');
     } else {
