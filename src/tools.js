@@ -32,5 +32,4 @@ document.onload = function(){
   for (var i = 0; i < i1.length; i++) {
     i1[i].setAttribute("onclick", "function\(\) \{this\.innerHTML \=\=\= \'Show\' \? this\.innerHTML \= \'Hide\'\: this\.innerHTML \= \'Show\'");
   };
-  
 };
