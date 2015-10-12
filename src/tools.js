@@ -1,16 +1,9 @@
-function css(prop,val) {
-  var toCSS = this.querySelectorAll(prop);
-  for (var i = 0; i < toCSS.length; i++) {
-    toCSS[i].style.val = 0;
-  };
-};
-
 function tab(tabId, pageId) {
   event.preventDefault();
-  document.querySelectorAll("div#tabs" + tabId + "> div.page").css('display', 'none');
-  document.querySelectorAll("div#tabs" + tabId + "> div#page" + pageId).css('display', 'inline');
-  document.querySelectorAll("ul#tabs" + tabId + "> li").css('background-color', '#A0A0A0');
-  document.querySelectorAll("ul#tabs" + tabId + "> li#page" + pageId).css('background-color', 'white');
+  document.querySelectorAll("div#tabs" + tabId + "> div.page").style.display = 'none';
+  document.querySelectorAll("div#tabs" + tabId + "> div#page" + pageId).style.display = 'inline');
+  document.querySelectorAll("ul#tabs" + tabId + "> li").style.backgroundColor = '#A0A0A0';
+  document.querySelectorAll("ul#tabs" + tabId + "> li#page" + pageId).style.backgroundColor = 'white';
 };
 
 function spoil(id) {
