@@ -31,5 +31,6 @@ window.onload = function(){
   var i1 = document.querySelectorAll('.show');
   for (var i = 0; i < i1.length; i++) {
     i1[i].setAttribute("onclick", i1[i].getAttribute("onclick") + "\; this\.innerHTML \=\=\= \'Show\' \? this\.innerHTML \= \'Hide\'\: this\.innerHTML \= \'Show\'\;");
+    i1[i].style.display = 'none';
   };
 };
