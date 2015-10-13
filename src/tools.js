@@ -42,9 +42,10 @@ window.onload = function(){
   var c = document.querySelectorAll('pre');
   for (var i = 0; i < c.length; i++) { //for each code block
     var c2 = c[i].innerHTML.length;
+    var c3 = c[i].innerHTML;
     c[i].innerHTML = "";
     for (var i1 = 0; i1 < c2; i1++) { // for each letter in code block
-      c[i].innerHTML = c[i].innerHTML + "<span>" + c[i].innerHTML.charAt(i1) + "</span>";
+      c[i].innerHTML = c[i].innerHTML + "<span>" + c3[i].innerHTML.charAt(i1) + "</span>";
     };
   };
 };
