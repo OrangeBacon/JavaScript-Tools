@@ -45,7 +45,7 @@ window.onload = function(){
     var c3 = c[i].innerHTML;
     c[i].innerHTML = "";
     for (var i1 = 0; i1 < c2; i1++) { // for each letter in code block
-      c[i].innerHTML = c[i].innerHTML + "<span>" + c3.innerHTML.charAt(i1) + "</span>";
+      c[i].innerHTML = c[i].innerHTML + "<span>" + c3.charAt(i1) + "</span>";
     };
   };
 };
